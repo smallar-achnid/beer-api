@@ -6,11 +6,17 @@ const BrewerySchema = new Schema({
         type: String,
         required: true
     }, 
-    rating: {
-        type: Number,
-        min: [0, 'Ratingmust be a number between 0 and ten (inclusive)'],
-        max: [10, 'Ratingmust be a number between 0 and ten (inclusive)'],
+    address: {
+        type: String,
+        // min: [0, 'Ratingmust be a number between 0 and ten (inclusive)'],
+        // max: [10, 'Ratingmust be a number between 0 and ten (inclusive)'],
         required: true
+    }, 
+
+    favorite: {
+        type: Boolean,
+        default: false
+
     }
 })
 
